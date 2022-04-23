@@ -2,6 +2,8 @@
   "dependencies": {
     "@babel/core": "^7.17.9",
     "@babel/plugin-transform-modules-umd": "^7.16.7",
-    "@babel/preset-env": "^7.16.11"
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.16.11",
+    "regenerator-runtime": "^0.13.9"
   }
 }

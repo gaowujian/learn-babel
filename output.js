@@ -1,7 +1,20 @@
-"use strict";
+async function getName(params) {
+  try {
+    const result = await new Promise((resolve, reject) => {
+      setTimeout(() => {
+        reject("khjsdhjer");
+      }, 2000);
+    });
 
-var _data = _interopRequireDefault(require("./data"));
+    console.log("result:", result);
+    return result;
+  } catch (error) {
+    console.log("error:", error);
+  }
+}
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-console.log("data:", _data.default);
+let data;
+data = getName().then((data) => {
+  console.log("data:", data);
+});
+console.log("data1:", data);
